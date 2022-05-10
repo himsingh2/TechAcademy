@@ -106,6 +106,8 @@ header{
 }
 	
 #menu li:hover a, #menu li span{
+	font-style: oblique;
+	font-size: large;
 	background: rgb(110, 210, 238);
 	color: #373737;
 	text-decoration: none;
@@ -139,11 +141,11 @@ header{
 	position: absolute;
 	font-size: 1em;
 	line-height: 1.5em;
-    top: 43%;
+    top: 45%;
     left: 65%;
     font-family: Geneva,;
 	font-style: italic;
-    color: rgb(33, 116, 5);
+    color: rgb(26, 104, 0);
     text-align: center;
     transform: translate(-30%,-30%);
 }
@@ -152,7 +154,8 @@ header{
 #welcome{
     overflow: hidden;
     width: 1000px;
-    margin: 0px auto;
+	margin-top: 50px;
+    /* margin: 0 auto; */
 }
 
 #welcome .title{
@@ -252,21 +255,7 @@ header{
 }
      
 
-.company-details{
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-	padding: 3em 0em;
-	background-color: #71aaff;
-	text-align: center;
-	/* margin-top: 5em;
-	width: 100%;
-	margin: ; */
-/* 
-	border: 2px solid red; */
-	
-}
-
+/* Footer CSS */
 
 #footer {
     margin-left:auto;
@@ -276,10 +265,21 @@ header{
 }
 
 .footer-row{
+
 	display: flex;
 	justify-content: center;
 
 }
+
+.company-details{
+	
+	overflow: hidden;
+	border-top: 20px solid rgba(86, 127, 204, 0.163);
+	background-color: #71aaff;
+	text-align: center;
+	
+}
+
 
 .footer-row #col1,
 .footer-row #col2,
@@ -287,7 +287,7 @@ header{
 	float: left;
 	width: 300px;
 	border-radius: 5px;
-	padding: 80px 40px 80px 40px;
+	padding: 40px 20px 40px 20px;
 	text-align: center;
 	
 }
@@ -302,15 +302,16 @@ header{
 .copyright
 {
 	overflow: hidden;
-	padding: 3em 0em;
-	border-top: 20px solid rgba(255, 255, 255, 0.08);
+	/* padding: 2em 0em; */
+	border-top: 20px solid rgba(91, 86, 86, 0.08);
 	text-align: center;
 	background: #4CAF50;
 }
 
 .copyright p
 {
-    letter-spacing: 1px;
+	padding-top: 20px;
+	letter-spacing: 1px;
     font-size: 0.90em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -328,7 +329,7 @@ header{
 
 .contact{
     margin: 0;
-    padding: 2em 0em 0em 0em;
+    padding: 2em 0em 3em 0em;
     list-style: none;
 }
      
@@ -341,9 +342,13 @@ header{
 .contact li a{
     color: #FFF;
 	display: inline-block;
-    background: #4C93B9;
+    background: #086fa6;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
+}
+
+.contact li a:hover {
+	background: #023a59;
 }
