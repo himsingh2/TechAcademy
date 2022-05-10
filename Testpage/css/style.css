@@ -54,6 +54,7 @@ header{
 
 
 #logo{
+	display: flex;
     float: left;
     padding: none;
     margin: none;
@@ -62,7 +63,7 @@ header{
 }
 
 #logo img{
-    width: 60%;
+  
     float: left;
     padding: 0px 0px;
 }
@@ -80,10 +81,11 @@ header{
 	text-align: center;
 	float: right;
 	margin: none;
-	background: #05d4d0;
+	background: #3679a2;
 }
 	
 #menu li{
+	
 	display: inline-block;
 	padding: none;
 	margin: none;
@@ -100,17 +102,17 @@ header{
 	
 #menu li a{
 		
-	color: rgb(55, 55, 55);
+	color: rgb(233, 237, 241);
 }
 	
 #menu li:hover a, #menu li span{
-	background: rgb(255, 178, 178);
+	background: rgb(110, 210, 238);
 	color: #373737;
 	text-decoration: none;
 }
 
 #header-image-menu{
-    top: 5px;
+    top: 2px;
     position: relative;
 }
 
@@ -122,13 +124,30 @@ header{
 
 #image-text{
     position: absolute;
-    top: 60%;
-    left: 60%;
-    font-family: 'ROBOTO';
-    color: rgb(98, 3, 139);
+	font-size: 3em;
+    top: 30%;
+    left: 65%;
+    font-family: sans-serif;
+    color: rgba(1, 84, 168, 0.821);
     text-align: center;
     transform: translate(-30%,-30%);
 }
+
+#image-subtext{
+	
+	width: 25%;
+	position: absolute;
+	font-size: 1em;
+	line-height: 1.5em;
+    top: 43%;
+    left: 65%;
+    font-family: Geneva,;
+	font-style: italic;
+    color: rgb(33, 116, 5);
+    text-align: center;
+    transform: translate(-30%,-30%);
+}
+
 
 #welcome{
     overflow: hidden;
@@ -161,8 +180,8 @@ header{
 .row #column3{
 	float: left;
 	width: 300px;
-	border: 1px solid #05d4d0;
-	border-radius: 5px;
+	/* border: 1px solid #05d4d0;
+	border-radius: 5px; */
 	padding: 80px 40px 80px 40px;
 }
 
@@ -208,8 +227,8 @@ header{
 .row #column24{
 	float: left;
 	width: 210px;
-	border: 1px solid #033c3b;
-	border-radius: 5px;
+	/* border: 1px solid #033c3b;
+	border-radius: 5px; */
 	padding: 80px 40px 80px 40px;
 	text-align: center;
 }
@@ -234,11 +253,17 @@ header{
      
 
 .company-details{
+	display: flex;
+	justify-content: center;
 	overflow: hidden;
 	padding: 3em 0em;
 	background-color: #71aaff;
 	text-align: center;
-	margin-top: 5em;
+	/* margin-top: 5em;
+	width: 100%;
+	margin: ; */
+/* 
+	border: 2px solid red; */
 	
 }
 
@@ -248,6 +273,12 @@ header{
     margin-right:auto;
     margin-top:2em;
 	text-align: center;
+}
+
+.footer-row{
+	display: flex;
+	justify-content: center;
+
 }
 
 .footer-row #col1,
